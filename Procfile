@@ -1,1 +1,1 @@
-web: gunicorn showtime.wsgi --log-file -
+web: waitress-serve --port=$PORT showtime.wsgi:application 
